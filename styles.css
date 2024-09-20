@@ -1,4 +1,5 @@
 :root {
+    --blueprint: rgb(66, 166, 220);
     --blue: #007bff;
     --cyan: #17a2b8;
     --paper: #f7efe8;
@@ -13,7 +14,7 @@
 
 header {
     margin: auto;
-    background-color: blue;
+    background-color: var(--blueprint);
     padding: 10px;
 }
 
@@ -56,7 +57,7 @@ body {
 }
 
 #blue {
-    color: var(--blue);
+    color: var(--blueprint);
 }
 
 #cyan {
@@ -73,10 +74,11 @@ footer {
     background-color: var(--cyan);
     display: flex;
     justify-content: space-between;
-    align-items:center
+    align-items: center
 }
 
-footer, a {
+footer,
+a {
     padding: 25px;
     border: 3px solid black;
 }
