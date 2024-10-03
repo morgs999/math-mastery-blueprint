@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SITE CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- TailWind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Google Fonts Connect -->
@@ -24,52 +25,86 @@
     <!-- Site Title -->
     <title>Math Mastery Blueprint</title>
     <link rel="icon" type="image/x-icon" href="./assets/function.png">
-    <!-- FAVICON ATTRIBUTION
-    href="https://www.flaticon.com/free-icons/function" title="function icons">Function icons created by Freepik - Flaticon -->
+    <!-- ICON ATTRIBUTION -->
+    <!-- href="https://www.flaticon.com/free-icons/function" title="function icons">Function icons created by Freepik - Flaticon -->
+    <!-- <a target="_blank" href="https://icons8.com/icon/36389/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
 </head>
 
 <body>
     <header class="header">
+        <!-- <section class="top-nav"> -->
+        <nav class="navbar custom-navbar">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class='hamburger' src="./assets/icons8-menu.svg" alt="Hamburger Icon">
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">The Blueprint</a></li>
+                                <li><a class="dropdown-item" href="#">The Course Content</a></li>
+                                <li><a class="dropdown-item" href="#">The Process</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#">About Me</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <h1>
+                    THE MATH MASTERY BLUEPRINT
+                </h1>
+            </div>
+        </nav>
+
+
+
+        <!-- </section> -->
 
     </header>
 
+    <main>
+        <section class="hero">
 
-
-    <div class="mainbox container p-10">
-        <div class="title container p-10 text-center animate__animated animate__rubberBand">
-            <h1 class="h1">
-                <span id="blue">The Math</span><br>
-                <span id="green">Mastery</span><br>
-                <span id="cyan">Blueprint</span>
+            <div class="parallax"></div>
+            <h1>
+                Welcome to the Math Mastery Blueprint
             </h1>
-        </div>
-        <div class="subtitle container p-10 text-left animate__animated animate__backInLeft">
-            <h3 class='h3' id="box">
-                <span>Learn.</span>
-                <span>Practice.</span>
-                <span>Master.</span>
-            </h3>
-        </div>
-        <div class="paragraph container p-10 text-right animate__animated animate__backInLeft">
-            <p class="p">
-                <span id="blue">Math Mastery Blueprint</span> is a platform that helps you learn and master math
-                concepts.
-                You
-                can practice math problems and track your progress.
-            </p>
-        </div>
-    </div>
+        </section>
 
-    <footer class="footer">
+    </main>
+
+    <footer>
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
-
-
     </footer>
 
 
 </body>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!-- Site JS -->
 <script src="script.js"></script>
 
 </html>

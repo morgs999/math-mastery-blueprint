@@ -1,76 +1,66 @@
 :root {
-    --blue: rgb(66, 166, 220);
-    --darkblue: #063970;
+    --blue: rgb(66, 166, 226);
+    --green: rgb(166, 226, 66);
+    --pink: rgb(226, 66, 166);
+    --orange: rgb(226, 136, 66);
+    --blueprint: rgb(96, 136, 166);
+    --darkblue: rgb(6, 56, 116);
     --paper: #f7efe8;
-    --green: #75eb98;
     --box: 0 5px 30px 0.1px #cccccc;
 }
 
-* {
+
+body {
     background-color: var(--paper);
-    margin: auto;
 }
 
 header {
-    margin: auto;
-    background-color: var(--blue);
-    padding: 10px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 7em;
+    position: fixed;
+    width: 100%;
     box-shadow: var(--box);
-    border-right: 3px solid var(--green);
-    border-bottom: 3px solid var(--green);
-    border-radius: 50px;
-    margin: 10px;
-    padding: 30px;
 }
 
-.h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    border-left: 3px solid var(--darkblue);
-    border-bottom: 3px solid var(--darkblue);
-    border-radius: 50px;
-    margin: 10px;
-    padding: 30px;
+.custom-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: white;
+    height: 8em;
+    padding: 4em;
 }
 
-.p {
-    font-family: 'Abel', sans-serif;
-    font-size: 1.5rem;
-    border-right: 3px solid var(--blue);
-    border-bottom: 3px solid var(--blue);
-    border-radius: 50px;
-    margin: 10px;
-    padding: 30px;
+.top-nav>h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
 }
 
-#blue {
-    color: var(--blue);
+.hamburger {
+    max-width: 2em;
+    
 }
 
-#cyan {
-    color: var(--darkblue);
+main {
+    visibility: hidden;
 }
 
-#green {
-    color: var(--green);
+
+.parallax {
+    background-image: url('assets/pexels-kindelmedia-7054787.jpg');
+    height: 500px;
+    /* Adjust as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
+    visibility: hidden;
     margin: auto;
     padding: 35px;
-    background-color: var(--darkblue);
+    background-color: var(--blue);
     display: flex;
     justify-content: space-between;
     align-items: center
