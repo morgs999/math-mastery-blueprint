@@ -5,10 +5,9 @@
     --orange: rgb(226, 136, 66);
     --blueprint: rgb(96, 136, 166);
     --darkblue: rgb(6, 56, 116);
-    --paper: #f7efe8;
+    --paper: #fff4eb;
     --box: 0 5px 30px 0.1px #cccccc;
 }
-
 
 body {
     margin: auto;
@@ -41,8 +40,12 @@ header {
 
 main {
     /* visibility: hidden; */
+    background-color: var(--paper);
 }
 
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
 
 .parallax {
     background-image: url('assets/pexels-kindelmedia-7054787.jpg');
