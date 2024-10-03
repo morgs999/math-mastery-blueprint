@@ -11,6 +11,7 @@
 
 
 body {
+    margin: auto;
     background-color: var(--paper);
 }
 
@@ -18,6 +19,8 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: var(--box);
+    z-index: 1;
+
 }
 
 .custom-navbar {
@@ -31,29 +34,34 @@ header {
     padding: 4em;
 }
 
-.top-nav>h1 {
+.navbar-header {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3em;
 }
 
-.hamburger {
-    max-width: 2em;
-    
-}
-
 main {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 
 .parallax {
     background-image: url('assets/pexels-kindelmedia-7054787.jpg');
-    height: 500px;
+    height: 900px;
     /* Adjust as needed */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#hero {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.icon-img {
+    height: 3em;
 }
 
 footer {
