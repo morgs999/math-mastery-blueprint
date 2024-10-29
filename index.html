@@ -34,27 +34,28 @@
 
 <body>
     <header class="header">
-        <!-- <section class="top-nav"> -->
-        <nav class="navbar custom-navbar">
+
+        <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class='hamburger' src="./assets/icons8-menu.svg" alt="Hamburger Icon">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
                             </a>
-
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">The Blueprint</a></li>
+                                <li><a class="dropdown-item" href="#blueprint">The Blueprint</a></li>
                                 <li><a class="dropdown-item" href="#">The Course Content</a></li>
                                 <li><a class="dropdown-item" href="#">The Process</a></li>
                                 <li><a class="dropdown-item" href="#">Testimonials</a></li>
@@ -63,21 +64,20 @@
                                     <hr class="dropdown-divider">
                                 </li>
                             </ul>
+                        </div>
 
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
+
+
                 <h1 class="navbar-header">
                     THE MATH MASTERY BLUEPRINT
                 </h1>
+
             </div>
+
         </nav>
-
-
-
-        <!-- </section> -->
 
     </header>
 
@@ -91,7 +91,9 @@
         </section>
 
         <section class="overview d-flex flex-column justify-content-center align-items-center m-5 p-5">
-            <h2 class="display-3">the math mastery blueprint was designed to help students who may struggle with anxiety
+            <div id="blueprint"></div>
+            <h2 class="display-3">the math mastery blueprint was designed to help students who may
+                struggle with anxiety
                 about maths. it
                 helps students to:</h2>
             <div class="container border border-secondary d-flex justify-content-around m-5 p-5">
@@ -356,7 +358,7 @@
 
         <section class="about-me d-flex flex-row justify-content-center align-items-center">
             <div id="circle-shape-example">
-                <img src="./assets/hsmark.png" alt="mark" class="rounded-circle curve" />
+                <img src="./assets/headshot.jpg" alt="mark" class="rounded-circle curve" />
                 <div class="about-me-text">
                     <h6 class="display-6">About Mark Chan</h6>
                     <p>I have been a teacher in Ontario for the past 6 years, with the first four years teaching Grades
