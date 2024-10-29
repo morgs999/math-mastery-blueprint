@@ -10,7 +10,7 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
 }
 
 header {
@@ -35,6 +35,12 @@ header {
 .navbar-header {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3em;
+    color: white;
+}
+
+#navDropdown {
+    background-color: white;
+    text-align: right;
 }
 
 main {
@@ -47,8 +53,7 @@ h2 {
 
 .parallax {
     background-image: url('assets/pexels-kindelmedia-7054787.jpg');
-    height: 900px;
-    /* Adjust as needed */
+    height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,5 +119,5 @@ footer {
 footer,
 a {
     padding: 25px;
-    font-size:larger;
+    font-size: larger;
 }
