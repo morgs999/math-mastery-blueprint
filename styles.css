@@ -22,10 +22,10 @@ header {
 }
 
 .custom-navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     background-color: var(--blue);
     color: white;
     height: 8em;
