@@ -47,23 +47,49 @@ main {
     background-color: var(--paper);
 }
 
+h1,
 h2 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
 .parallax {
     background-image: url('assets/pexels-kindelmedia-7054787.jpg');
-    height: 800px;
+    /* height: 800px; */
+    min-height: 140vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#hero {
+.overview {
+    background-color: rgb(96, 136, 166, 0.85);
+    border-radius: 1rem;
+    box-shadow: var(--box);
     position: absolute;
-    top: 200px;
-    left: 200px;
+    color: white;
+    top: 15%;
+}
+
+.icard {
+    /* background-color: var(--blue); */
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--box);
+}
+
+.icardone {
+    background-color: var(--pink);
+}
+
+.icardtwo {
+    background-color: var(--green);
+}
+
+.icardthree {
+    background-color: var(--orange);
 }
 
 .icon-img {
