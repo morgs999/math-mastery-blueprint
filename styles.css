@@ -71,8 +71,9 @@ h2 {
     top: 15%;
 }
 
+
+
 .icard {
-    /* background-color: var(--blue); */
     color: white;
     margin: 1rem;
     padding: 1rem;
@@ -146,4 +147,22 @@ footer,
 a {
     padding: 25px;
     font-size: larger;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
