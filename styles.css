@@ -225,7 +225,7 @@ h2 {
     font-weight: bolder;
     font-style: italic;
     font-size: 1.1em;
-    color: var(--blueprint);
+    color: var(--blue);
 }
 
 .process {
@@ -233,6 +233,10 @@ h2 {
     margin: 4rem;
     padding: 4rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.process-title {
+    text-align: center;
 }
 
 .accordion-body {
@@ -246,7 +250,7 @@ h2 {
     height: auto;
     min-width: 150px;
     float: left;
-    margin-right: 2rem;
+    margin-right: 3rem;
     border-radius: 50%;
     -webkit-shape-outside: circle();
     shape-outside: circle();
