@@ -246,14 +246,20 @@ h2 {
 footer {
     background-color: var(--blue);
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
-footer,
-a {
-    padding: 25px;
-    font-size: larger;
+footer a {
+    padding: 45px;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    animation: zoom 2s;
+    text-decoration: none;
 }
 
 .typewriter {
@@ -296,5 +302,21 @@ a {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        font-size: 200%;
+    }
+
+    50% {
+        font-size: 250%;
+        rotate: 360deg;
+        color: white;
+    }
+
+    100% {
+        font-size: 200%;
     }
 }
