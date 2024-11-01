@@ -117,6 +117,7 @@ h2 {
     height: 200px;
     position: relative;
     margin: auto;
+    padding: 1rem;
 }
 
 /* Hide the images by default */
@@ -124,13 +125,23 @@ h2 {
     display: none;
     color: black;
     background-color: var(--blue);
+    padding: 2em;
+    margin: auto;
+}
+
+.mySlides p {
+    color: white;
+}
+
+.mySlides q {
+    font-style: italic;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     width: auto;
     margin-top: -22px;
