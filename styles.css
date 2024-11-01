@@ -17,7 +17,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: var(--box);
-    z-index: 2;
+    z-index: 6;
 
 }
 
@@ -95,12 +95,7 @@ h2 {
     height: 3em;
 }
 
-.process {
-    text-align: center;
-    margin: 4rem;
-    padding: 4rem;
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 /*  */
 
@@ -225,6 +220,26 @@ h2 {
 }
 
 /*  */
+
+.emphasis {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--blueprint);
+}
+
+.process {
+    text-align: left;
+    margin: 4rem;
+    padding: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion-body {
+    font-size: 1.3em;
+    margin: 1rem;
+    letter-spacing: 0.05em;
+}
 
 #circle-shape-example .curve {
     width: 33%;
