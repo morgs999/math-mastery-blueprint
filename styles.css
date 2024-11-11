@@ -13,6 +13,12 @@ body {
     margin: auto;
 }
 
+button,
+a {
+    cursor: pointer;
+}
+
+
 /* HEADER */
 header {
     position: fixed;
@@ -21,6 +27,7 @@ header {
     z-index: 6;
 
 }
+
 
 /* NAVBAR */
 .custom-navbar {
@@ -53,6 +60,7 @@ h1,
 h2 {
     font-family: 'Bebas Neue', sans-serif;
 }
+
 
 /* BLUEPRINT PARALLAX SECTION */
 .parallax {
@@ -98,10 +106,12 @@ h2 {
     height: 3em;
 }
 
+
 /* CALENDLY EMBED */
 .calendar {
     font-size: 2rem;
 }
+
 
 /* TESTIMONIALS SECTION */
 .testimonial {
@@ -202,6 +212,7 @@ h2 {
     background-color: #717171;
 }
 
+
 /* THE PROCESS SECTION */
 .emphasis {
     font-weight: bolder;
@@ -227,6 +238,7 @@ h2 {
     letter-spacing: 0.05em;
 }
 
+
 /* ABOUT ME SECTION */
 #circle-shape-example .curve {
     width: 33%;
@@ -244,6 +256,7 @@ h2 {
     margin-left: 6rem;
     margin-right: 6rem;
 }
+
 
 /* CONTACT MODAL */
 .modal {
@@ -343,8 +356,6 @@ footer a:hover {
     animation: zoom 2s;
     text-decoration: none;
 }
-
-
 
 
 /* ANIMATIONS */
