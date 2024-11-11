@@ -12,13 +12,15 @@ let testimonials = [
         quote: "Mark has been an exceptional tutor for our son through grades 9 and 10. Mark's dedication and expertise in math have been instrumental in our son's academic success. From the very beginning, Mark demonstrated an impressive ability to explain complex concepts in a way that was both understandable and engaging. His patient and encouraging approach helped our son build confidence and develop a genuine interest in Math. Mark's tutoring not only improved our son's grades but also instilled a deeper appreciation for math. We have seen remarkable progress in our son's performance and attitude towards learning, and we attribute much of this success to Mark's guidance and support. He is not only a skilled educator but also a mentor who genuinely cares about his students' growth. I wholeheartedly recommend Mark for tutoring. He has been an invaluable asset to our family, and I am confident he will continue to inspire and support many more students in their Academic journeys."
     },
     {
-        name: 'next',
+        name: 'Deb P.',
         color: "var(--orange)",
-        location: 'next',
+        location: 'Etobicoke, ON',
         quote: 'Hi I’m a parent of a twelve year old and recently our daughter took math tutoring in summer with mark Chan.  Initially she was a little bit reluctant to think about doing math in the summertime when she already has fairly good grades.  But after the first day she was very happy to be in the math tutoring  It was a wonderful experience for her and she really enjoyed being challenged with two grades up math problems.  And I think primarily Mark Chan had a lot of empathy for them.  He was really personable, and understood the difficulties they were having when they encountered something they didn’t understand.  Also she said that at school where the explanations are sometimes complicated and roundabout, with Mark they were straightforward, they were interesting.  He put it in context that they could understand really easily.  He had a lot of patience for her and would explain it again if she needed extra help with a very thorough explanation, but minimal frustration, which was wonderful.  His communication skills are excellent, especially with that age group, and he was very knowledgeable.  He seemed to know the concepts very well and had no problem articulating them.  We would definitely recommend math tutoring with Mark, it was a great experience for our daughter.'
     },
 ];
 
+//
+// Slideshow
 let slideshow = document.querySelector('.slideshow-container');
 let slideIndex = 1;
 
@@ -65,3 +67,26 @@ testimonials.forEach((testimonial, index) => {
 });
 
 showSlides(slideIndex);
+
+// 
+// Modal
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const openModalBtn = document.querySelector('.btn-open');
+const closeModalBtn = document.querySelector('.btn-close');
+
+const openModal = () => {
+    modal.style.visibility = 'visible';
+    overlay.style.visibility = 'visible';
+}
+
+openModalBtn.addEventListener('click', openModal);
+
+const closeModal = () => {
+    modal.style.visibility = 'hidden';
+    overlay.style.visibility = 'hidden';
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+
+overlay.addEventListener('click', closeModal);
