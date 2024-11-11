@@ -95,7 +95,12 @@ h2 {
     height: 3em;
 }
 
-
+.calendar {
+    display: flex;
+    margin: 4rem;
+    padding: 4rem;
+    font-family: 'Able', sans-serif;
+}
 
 /*  */
 
