@@ -264,13 +264,14 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    max-width: 40%;
+    max-width: 60%;
     max-height: 91%;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
     /* position: absolute; */
     z-index: 2;
+    /* transform: translateX(70%); */
 }
 
 .modal-flex {
@@ -296,11 +297,16 @@ textarea {
 .modal-btn {
     background-color: var(--blue);
     border: 1px solid white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
     max-width: 33%;
     color: white;
     margin: 3rem;
     padding: 1rem;
     border-radius: 10px;
+    transform: translateX(100%);
 }
 
 .btn-close {

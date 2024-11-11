@@ -74,6 +74,7 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const openModalBtn = document.querySelector('.btn-open');
 const closeModalBtn = document.querySelector('.btn-close');
+const navOpenModalBtn = document.querySelector('.nav-btn-open');
 
 const openModal = () => {
     modal.style.visibility = 'visible';
@@ -81,6 +82,7 @@ const openModal = () => {
 }
 
 openModalBtn.addEventListener('click', openModal);
+navOpenModalBtn.addEventListener('click', openModal);
 
 const closeModal = () => {
     modal.style.visibility = 'hidden';
