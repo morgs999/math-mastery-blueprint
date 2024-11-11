@@ -96,10 +96,7 @@ h2 {
 }
 
 .calendar {
-    display: flex;
-    margin: 4rem;
-    padding: 4rem;
-    font-family: 'Able', sans-serif;
+    font-size: 2rem;
 }
 
 /*  */
