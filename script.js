@@ -54,7 +54,9 @@ function showSlides(n) {
 testimonials.forEach((testimonial, index) => {
     const slide = `
     <div class="mySlides" id="${index}">
-        <q class=''>${testimonial.quote}</q>
+        <div class='quote-container'>
+            <q class='container'>${testimonial.quote}</q>
+        </div>
         
         <h2 style='color: white; padding-top: 2rem; font-size: 4rem;'>${testimonial.name}</h2>
         

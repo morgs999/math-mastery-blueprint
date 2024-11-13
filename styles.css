@@ -137,7 +137,12 @@ header {
     padding: 5em;
     border: 0.5px solid white;
     border-radius: 1rem;
-    box-shadow: var(--box);
+    box-shadow: var(--box);   
+}
+
+.mySlides .quote-container {
+    max-height: 20rem;
+    overflow: scroll;
 }
 
 .mySlides q {
