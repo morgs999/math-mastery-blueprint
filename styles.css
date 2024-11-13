@@ -13,6 +13,15 @@ body {
     margin: auto;
 }
 
+main {
+    background-color: var(--paper);
+}
+
+h1,
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 button,
 a {
     cursor: pointer;
@@ -50,15 +59,6 @@ header {
 #navDropdown {
     background-color: white;
     text-align: right;
-}
-
-main {
-    background-color: var(--paper);
-}
-
-h1,
-h2 {
-    font-family: 'Bebas Neue', sans-serif;
 }
 
 
@@ -116,91 +116,92 @@ h2 {
 /* TESTIMONIALS SECTION */
 .testimonial {
     text-align: center;
-    margin: 4rem;
-    padding: 4rem;
+    /* margin: 4rem; */
+    /* padding: 4rem; */
     font-family: 'Able', sans-serif;
 }
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
-    height: 200px;
+    /* height: 200px; */
     position: relative;
     margin: auto;
     padding: 1rem;
 }
 
 .mySlides {
-    display: none;
-    color: black;
+    /* display: none; */
+    color: var(--paper);
     background-color: var(--blue);
-    padding: 2em;
-    margin: auto;
-}
-
-.mySlides p {
-    color: white;
+    padding: 5em;
+    border: 0.5px solid white;
+    border-radius: 1rem;
+    box-shadow: var(--box);
 }
 
 .mySlides q {
     font-style: italic;
+    font-size: 1.5em;
 }
 
 .prev,
 .next {
-    cursor: pointer;
-    /* position: absolute; */
+    /* cursor: pointer; */
+    position: absolute;
     top: 50%;
-    width: auto;
+    /* width: auto; */
     margin-top: -22px;
     padding: 16px;
-    color: black;
+    color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 3rem;
+    text-decoration: none;
     transition: 0.6s ease;
+    border: 2px dashed white;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
 
 .prev {
     left: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Caption text */
 .text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    /* color: white; */
+    /* font-size: 15px; */
+    /* padding: 8px 12px; */
+    /* position: absolute; */
+    /* bottom: 8px; */
+    /* width: 100%; */
+    /* text-align: center; */
 }
 
 .numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    /* color: white; */
+    /* font-size: 12px; */
+    /* padding: 8px 12px; */
+    /* position: absolute; */
+    /* top: 0; */
 }
 
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 4px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -306,7 +307,7 @@ textarea {
     margin: 3rem;
     padding: 1rem;
     border-radius: 10px;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 }
 
 .btn-close {
