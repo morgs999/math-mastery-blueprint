@@ -63,18 +63,31 @@ header {
 
 
 /* BLUEPRINT PARALLAX SECTION */
+.hero {
+    width: 100%;
+}
+
 .parallax {
     background-image: url('assets/pexels-kindelmedia-7054787.jpg');
     position: relative;
-    /* height: 800px; */
-    min-height: 140vh;
+    min-height: 150vh;
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    /* width: 100%; */
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     background-color: rgb(96, 136, 166, 0.85);
     border-radius: 1rem;
     box-shadow: var(--box);
@@ -84,6 +97,7 @@ header {
 }
 
 .icard {
+    display: flex;
     color: white;
     margin: 1rem;
     padding: 1rem;
