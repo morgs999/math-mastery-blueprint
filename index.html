@@ -29,7 +29,6 @@
     <!-- href="https://www.flaticon.com/free-icons/function" title="function icons">Function icons created by Freepik - Flaticon -->
     <!-- <a target="_blank" href="https://icons8.com/icon/36389/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <!-- <a href="https://www.freepik.com/search">Icon by UIcons</a> -->
-
 </head>
 
 <body>
@@ -65,36 +64,34 @@
 
     <main class="d-flex flex-column justify-content-center align-items-center">
 
-        <!-- <section class="hero" id="the-blueprint"> -->
         <div class="hero" id="the-blueprint">
-        <div class="parallax"></div>
-        <section class="overview ">
+            <div class="parallax"></div>
+            <section class="overview ">
 
-            <h2 class="display-3">
-                the math mastery blueprint was designed to help students who may struggle with anxiety about
-                maths. it helps students to:
-            </h2>
+                <h2 class="display-3">
+                    the math mastery blueprint was designed to help students who may struggle with anxiety about
+                    maths. it helps students to:
+                </h2>
 
-            <div class="container d-flex justify-content-around m-5">
-                <div
-                    class="icard icardone icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-1s">
-                    <img src="./assets/curve-arrow_15005308.svg" class="icon-img m-4" />
-                    <h4 style="text-align: center;">Build A Strong Foundation For Their Success</h4>
+                <div class="container d-flex justify-content-around m-5">
+                    <div
+                        class="icard icardone icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-1s">
+                        <img src="./assets/curve-arrow_15005308.svg" class="icon-img m-4" />
+                        <h4 style="text-align: center;">Build A Strong Foundation For Their Success</h4>
+                    </div>
+                    <div
+                        class="icard icardtwo icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-2s">
+                        <img src="./assets/sort-amount-up-alt_7434872.svg" class="icon-img m-4" />
+                        <h4 style="text-align: center;">Develop Important Critical Thinking Skills</h4>
+                    </div>
+                    <div
+                        class="icard icardthree icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-3s">
+                        <img src="./assets/square-root_3914223.svg" class="icon-img m-4" />
+                        <h4 style="text-align: center;">Develop Your Child's Confidence and Self-Esteem</h4>
+                    </div>
                 </div>
-                <div
-                    class="icard icardtwo icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-2s">
-                    <img src="./assets/sort-amount-up-alt_7434872.svg" class="icon-img m-4" />
-                    <h4 style="text-align: center;">Develop Important Critical Thinking Skills</h4>
-                </div>
-                <div
-                    class="icard icardthree icon-card d-flex flex-column border m-4 p-4 animate__animated animate__rubberBand animate__delay-3s">
-                    <img src="./assets/square-root_3914223.svg" class="icon-img m-4" />
-                    <h4 style="text-align: center;">Develop Your Child's Confidence and Self-Esteem</h4>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
-        <!-- </section> -->
 
         <section class="testimonial d-flex flex-column justify-content-center align-items-center m-5 p-5"
             id="testimonials">
@@ -402,18 +399,25 @@
         <button class="modal-btn btn-open">Get Started on Your Blueprint Today!</button>
 
         <section class="modal d-flex m-5 p-5">
-            <div class="modal-flex">
-                <img src="./assets/headshot2.png" alt="mark" class="rounded-circle curve" width="50px" height="50px" />
-                <button class="btn-close"></button>
-            </div>
-            <div>
-                <h3>Contact me Here!</h3>
-            </div>
-            <input type="text" placeholder="Name" required="true" />
-            <input type="text" placeholder="Email" required="true" />
-            <input type="text" placeholder="Phone" />
-            <textarea name="message" id="message" cols="20" rows="7" placeholder="Message"></textarea>
-            <button class="modal-send-btn">Send</button>
+            <form action="https://submit-form.com/Z7kCqQDe7">
+                <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <img src="./assets/headshot2.png" alt="mark" class="rounded-circle curve" width="50px"
+                            height="50px" />
+                        <button class="btn-close"></button>
+                    </div>
+                    <div>
+                        <h3>Contact me Here!</h3>
+                    </div>
+                    <input type="text" name="name" placeholder="Name" required />
+                    <input type="text" name="email" placeholder="Email" required />
+                    <input type="text" name="phone" placeholder="Phone" />
+                    <textarea name="message" name="message" id="message" cols="20" rows="7"
+                        placeholder="Message"></textarea>
+                    <button class="modal-send-btn" type="submit">Send</button>
+
+                </div>
+            </form>
         </section>
 
         <div class="overlay"></div>
