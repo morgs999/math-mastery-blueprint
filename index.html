@@ -39,9 +39,9 @@
 
                 <h2 class="navbar-header">The Math Mastery Blueprint</h2>
 
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                        style="color: white; font-size: 2em">
+                <div class="dropdown d-flex flex-row justify-content-center align-ittems-center">
+                    <button class="btn ddown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="color: white; font-size: 2em">
                         <!-- <i class="fas fa-bars"></i> -->
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" id="navDropdown">
@@ -117,20 +117,21 @@
         </section>
 
         <section class="calendar d-flex flex-column justify-content-center align-items-center m-5 p-5" id="calendar">
-            <h2 class="display-3">Book an Appointment</h2>
+            <h2 class="display-3 mb-5">Book an Appointment</h2>
 
             <!-- Calendly inline widget begin -->
-            <!-- <div id="calendly-embed" style="min-width:520px;height:700px;" data-resize="true"></div> -->
+            <div id="calendly-embed" style="position: relative; min-width:320px; height:700px;" data-resize="true">
+            </div>
 
-            <!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> -->
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
-            <!-- <script>
+            <script>
                 Calendly.initInlineWidget({
                     url: 'https://calendly.com/mark-chan0021?hide_gdpr_banner=1',
                     parentElement: document.getElementById('calendly-embed'),
                     resize: true
                 });
-            </script> -->
+            </script>
             <!-- Calendly inline widget end -->
 
         </section>

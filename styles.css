@@ -86,9 +86,9 @@ header {
     /* height: 100%; */
     /* width: 100%; */
     padding: 2rem;
-    margin-top: 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 4rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
     background-color: rgb(96, 136, 166, 0.85);
     border-radius: 1rem;
     box-shadow: var(--box);
@@ -222,8 +222,6 @@ header {
 
 
 /* COURSE CONTENT */
-.course-card {}
-
 .course-img {
     height: 100%;
     width: 100%;
@@ -452,14 +450,16 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 550px) {
-
     header {
-        width: 100vw;
+        width: 100%;
     }
 
-    .custom-navbar {
-        /* padding: 2em; */
+    .ddown-btn {
+        transform: translateY(-100%);
+    }
 
+    #navDropdown {
+        transform: translateY(-20%);
     }
 
     .parallax {
@@ -472,7 +472,9 @@ footer a:hover {
     }
 
     .overview {
-        width: 100vw;
+        margin: 0;
+        margin-top: 2rem;
+        width: 100%;
     }
 
     .hero-boxes {
@@ -482,6 +484,7 @@ footer a:hover {
 
     .testimonial {
         text-align: justify;
+        width: 125%;
     }
 
     .mySlides .quote-container {
@@ -489,7 +492,8 @@ footer a:hover {
     }
 
     .mySlides {
-        width: 90vw;
+
+        /* width: 90vw; */
         height: 80vh;
         padding: 1.5rem;
     }
