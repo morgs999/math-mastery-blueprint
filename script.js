@@ -58,9 +58,9 @@ testimonials.forEach((testimonial, index) => {
             <q class='container'>${testimonial.quote}</q>
         </div>
         
-        <h2 style='color: white; padding-top: 2rem; font-size: 4rem;'>${testimonial.name}</h2>
+        <h2 class='testimonial-name' style='color: white;'>${testimonial.name}</h2>
         
-        <h2 style='color: white;'>${testimonial.location}</h2>
+        <h2 class='testimonial-location' style='color: white;'>${testimonial.location}</h2>
         
     </div>
 `;
