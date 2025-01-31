@@ -17,6 +17,18 @@ let testimonials = [
         location: 'Etobicoke, ON',
         quote: 'Hi I’m a parent of a twelve year old and recently our daughter took math tutoring in summer with mark Chan.  Initially she was a little bit reluctant to think about doing math in the summertime when she already has fairly good grades.  But after the first day she was very happy to be in the math tutoring  It was a wonderful experience for her and she really enjoyed being challenged with two grades up math problems.  And I think primarily Mark Chan had a lot of empathy for them.  He was really personable, and understood the difficulties they were having when they encountered something they didn’t understand.  Also she said that at school where the explanations are sometimes complicated and roundabout, with Mark they were straightforward, they were interesting.  He put it in context that they could understand really easily.  He had a lot of patience for her and would explain it again if she needed extra help with a very thorough explanation, but minimal frustration, which was wonderful.  His communication skills are excellent, especially with that age group, and he was very knowledgeable.  He seemed to know the concepts very well and had no problem articulating them.  We would definitely recommend math tutoring with Mark, it was a great experience for our daughter.'
     },
+    {
+        name: 'Rita M.',
+        color: 'var(--pink)',
+        location: 'Toronto, ON',
+        quote: 'Thank you so much for being such a good teacher to my child. As a parent I know perfect teachers are hard to find, but for us (Mark) is the best teacher for my child.'
+    },
+    {
+        name: 'Edyta C.',
+        color: 'var(--green)',
+        location: 'Oakville, ON',
+        quote: 'Thank you Mark! Our son says make math super easy.  Last test was 20/20.'
+    }
 ];
 
 //
