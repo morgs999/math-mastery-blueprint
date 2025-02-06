@@ -1,9 +1,21 @@
 let testimonials = [
     {
+        name: 'Daniela O.',
+        color: 'var(--orange)',
+        location: 'Oakville, ON',
+        quote: 'Mark has made such a huge impact on our son’s confidence in math. In a short time, we have seen such a huge improvement not only in skill but in effort as well. Mark’s ability to connect with students and help them understand concepts is amazing!'
+    },
+    {
         name: "S. van der Spuy",
         color: "var(--pink)",
         location: "Oakville, ON",
         quote: "Mr. Chan is a godsend, period. We have worked with many tutors over the years, and are so thankful to have finally found a tutor who 'gets it.'  Being a teacher with experience puts Mark in a different league from other tutors. His experience with students of all ages, in and out of the classroom, is a valuable asset as he has his finger on the pulse of what is truly needed to help our sons thrive.  Mark works with both our children on their different needs, with patience and grace. Mark has a knack for being able to connect with his students and 'meet them where they're at.' His lessons are engaging and challenging, as he works genuinely to help his students reach and see success within themselves. As a parent, I appreciate Mark being punctual and exceptionally reliable and for following up each session via text or email complete with description of what was worked on, so that I am kept in the loop of my child's progress and development. Since working with Mark, both of our children have improved their grades and have developed a stronger work ethic around school work in general. Our youngest son is now enjoying the confidence that comes from hard work and the 'never give up' attitude as he is realizing his potential.  For us, improved grades has led to improved sense of self for both our sons, and for that, we are eternally grateful to Mr. Chan."
+    },
+    {
+        name: 'Edyta C.',
+        color: 'var(--green)',
+        location: 'Oakville, ON',
+        quote: 'Thank you Mark! Our son says make math super easy.  Last test was 20/20.'
     },
     {
         name: "Anne H.",
@@ -23,12 +35,6 @@ let testimonials = [
         location: 'Toronto, ON',
         quote: 'Thank you so much for being such a good teacher to my child. As a parent I know perfect teachers are hard to find, but for us (Mark) is the best teacher for my child.'
     },
-    {
-        name: 'Edyta C.',
-        color: 'var(--green)',
-        location: 'Oakville, ON',
-        quote: 'Thank you Mark! Our son says make math super easy.  Last test was 20/20.'
-    }
 ];
 
 //
@@ -78,6 +84,15 @@ testimonials.forEach((testimonial, index) => {
 `;
 
     slideshow.innerHTML += slide;
+});
+
+// Generate number of dots based on number of testimonials
+let dotContainer = document.querySelector('.dot-container');
+testimonials.forEach((testimonial, index) => {
+    let dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.setAttribute('onclick', `currentSlide(${index + 1})`);
+    dotContainer.appendChild(dot);
 });
 
 showSlides(slideIndex);
