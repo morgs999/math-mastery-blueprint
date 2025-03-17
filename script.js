@@ -35,6 +35,12 @@ let testimonials = [
         location: 'Toronto, ON',
         quote: 'Thank you so much for being such a good teacher to my child. As a parent I know perfect teachers are hard to find, but for us (Mark) is the best teacher for my child.'
     },
+    {
+        name: 'Jake and Elaine S.',
+        color: 'var(--green)',
+        location: 'Etobicoke, ON',
+        quote: 'Before starting tutoring with Mark our son struggled with and never really enjoyed math. Now he is confident in his abilities and even looks forward to tackling difficult math problems. We would definitely recommend Mark to anyone who wants to help their child improve in mathematics.'
+    }
 ];
 
 //
