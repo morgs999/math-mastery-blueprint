@@ -455,11 +455,11 @@ footer a:hover {
     }
 
     .ddown-btn {
-        transform: translateY(-100%);
+        transform: translate(-150%, -100%);
     }
 
     #navDropdown {
-        transform: translateY(-20%);
+        transform: translate(-20%, -20%);
     }
 
     .parallax {
