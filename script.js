@@ -1,5 +1,11 @@
 let testimonials = [
     {
+        name: 'Lesley',
+        color: 'var(--pink)',
+        location: 'Toronto, ON',
+        quote: 'Mark Chan is an excellent Math Tutor who delivers outstanding value for his rates. Since working with him, my daughter‘s understanding of mathematical concepts, her confidence, and her grades have steadily improved. His patient and methodical approach has made a measurable difference in both her performance and attitude towards the subject. At this rate, there will soon be very little left to improve.'
+    },
+    {
         name: 'Daniela O.',
         color: 'var(--orange)',
         location: 'Oakville, ON',
