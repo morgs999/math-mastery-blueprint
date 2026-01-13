@@ -135,89 +135,92 @@ header {
     /* margin: 4rem; */
     /* padding: 4rem; */
     font-family: 'Able', sans-serif;
+    overflow: hidden;
+    width: 100%;
 }
 
-/* Slideshow container */
+/* Infinite Scrolling Carousel */
 .slideshow-container {
-    max-width: 1000px;
-    /* height: 200px; */
+    width: 100%;
+    overflow: hidden;
     position: relative;
     margin: auto;
-    padding: 1rem;
+    padding: 2rem 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .mySlides {
-    /* display: none; */
+    flex: 0 0 400px;
+    min-width: 400px;
+    max-height: 280px;
     color: var(--paper);
-    background-color: var(--blue);
-    padding: 5em;
+    padding: 2em;
     border: 0.5px solid white;
     border-radius: 1rem;
     box-shadow: var(--box);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mySlides-orange {
+    background-color: rgba(226, 136, 66, 0.75);
+}
+
+.mySlides-pink {
+    background-color: rgba(226, 66, 166, 0.75);
+}
+
+.mySlides-green {
+    background-color: rgba(166, 226, 66, 0.75);
+}
+
+.mySlides-blue {
+    background-color: rgba(66, 166, 226, 0.75);
 }
 
 .mySlides .quote-container {
-    max-height: 20rem;
-    overflow: scroll;
+    max-height: 140px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    flex: 1;
 }
 
 .mySlides q {
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 .testimonial-name {
-    font-size: 4rem;
-    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.prev,
-.next {
-    /* cursor: pointer; */
-    position: absolute;
-    top: 50%;
-    /* width: auto; */
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    text-decoration: none;
-    transition: 0.6s ease;
-    border: 2px dashed white;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.prev {
-    left: 0;
-    border-radius: 10px;
-}
-
-.next {
-    right: 0;
-    border-radius: 10px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 4px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
+.testimonial-location {
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 
@@ -492,29 +495,27 @@ footer a:hover {
     }
 
     .mySlides {
+        flex: 0 0 280px;
+        min-width: 280px;
+        max-height: 320px;
+        height: auto;
+        padding: 1.5em;
+    }
 
-        /* width: 90vw; */
-        height: 80vh;
-        padding: 1.5rem;
+    .mySlides .quote-container {
+        max-height: 150px;
     }
 
     .mySlides q {
-        font-size: 1.2em;
-
+        font-size: 0.9em;
     }
 
-    .testimonial h2 {
-        padding-top: 1rem;
-        margin-top: 1rem;
-        margin-right: 0.75rem;
-        text-align: right;
-        font-size: 2rem;
+    .testimonial-name {
+        font-size: 1.3rem;
     }
 
-    .prev,
-    .next {
-        font-size: 1rem;
-        top: 80%;
+    .testimonial-location {
+        font-size: 0.9rem;
     }
 
     .process {

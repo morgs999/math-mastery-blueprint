@@ -50,40 +50,19 @@ let testimonials = [
 ];
 
 //
-// Slideshow
+// Infinite Scrolling Carousel
 let slideshow = document.querySelector('.slideshow-container');
-let slideIndex = 1;
 
+// Create carousel track
+const carouselTrack = document.createElement('div');
+carouselTrack.classList.add('carousel-track');
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
+// Generate testimonial slides
 testimonials.forEach((testimonial, index) => {
+    // Convert CSS variable color to rgba with opacity
+    const colorWithOpacity = testimonial.color.replace('var(--', '').replace(')', '');
     const slide = `
-    <div class="mySlides" id="${index}">
+    <div class="mySlides mySlides-${colorWithOpacity}" id="${index}">
         <div class='quote-container'>
             <q class='container'>${testimonial.quote}</q>
         </div>
@@ -94,20 +73,28 @@ testimonials.forEach((testimonial, index) => {
         
     </div>
 `;
-
-    slideshow.innerHTML += slide;
+    carouselTrack.innerHTML += slide;
 });
 
-// Generate number of dots based on number of testimonials
-let dotContainer = document.querySelector('.dot-container');
+// Duplicate testimonials for seamless infinite loop
 testimonials.forEach((testimonial, index) => {
-    let dot = document.createElement('span');
-    dot.classList.add('dot');
-    dot.setAttribute('onclick', `currentSlide(${index + 1})`);
-    dotContainer.appendChild(dot);
+    const colorWithOpacity = testimonial.color.replace('var(--', '').replace(')', '');
+    const slide = `
+    <div class="mySlides mySlides-${colorWithOpacity}" id="duplicate-${index}">
+        <div class='quote-container'>
+            <q class='container'>${testimonial.quote}</q>
+        </div>
+        
+        <h2 class='testimonial-name' style='color: white;'>${testimonial.name}</h2>
+        
+        <h2 class='testimonial-location' style='color: white;'>${testimonial.location}</h2>
+        
+    </div>
+`;
+    carouselTrack.innerHTML += slide;
 });
 
-showSlides(slideIndex);
+slideshow.appendChild(carouselTrack);
 
 // 
 // Modal
