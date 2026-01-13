@@ -9,7 +9,7 @@
 
 ## ABOUT THE BLUEPRINT
 
-Have you ever had your child experience anxiety about Math? This usually comes in many forms. Some behaviors include:
+Have you ever had your child experience anxiety about Math? This usually comes in many forms. Some behaviors include: 
 
 * Understanding the concepts in class but having a hard time getting high marks on quizzes, tests, or exams
 * Developing dread or anxiety about written evaluations 
